@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
 @import "reset";
 @import "grid";
 
@@ -10,21 +11,122 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: black;
+  color: white;
 }
 
 .HomePage {
+  background-image: url("https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+
+  h1 {
+    font-family: 'Festive', cursive;
+    color: white;
+    font-size: 80px;
+  }
+
+
+  .card-body {
+
+    color: black;
+  }
 
 }
 
 .AboutPage {
+  background-image: url("https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+
+  h1 {
+    font-family: 'Festive', cursive;
+    color: white;
+    font-size: 80px;
+  }
 
 }
 
 .ContactPage{
+  background-image: url("https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
 
 }
 
 .AppPage {
+  background-image: url("https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+
+  h1 {
+    font-family: 'Festive', cursive;
+    color: white;
+    font-size: 80px;
+  }
+
+}
+.myButton {
+  margin: 10px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  background-color: #f9c1b1;
+  color: navy;
+  border-radius: 20px;
+  transition: ease-out 0.3s:
+  font-size: 2rem;
+  outline: none;
+  border: 6px solid #fb8085;
+  position: relative;
+  z-index: 1;
+}
+
+.ShowPage {
+  background-image: url("https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+
+
+
+  .myButton:hover {
+    color: white;
+    cursor: pointer;
+  }
+
+  button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #fb8085;
+  }
+
+  button:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+  }
 
 }

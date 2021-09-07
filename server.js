@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 8000;
 const mongoose = require('mongoose');
 const path = require('path');
 const gigisController = require('./controllers/gigis');
+const { hash, register, login } = require('./controllers/Authentication');
 
 const MONGODB_URI = process.env.MONGODB_URI
 const db = mongoose.connection;
@@ -24,6 +25,8 @@ if (process.env.NODE_ENV !== 'development'){
 
 /* Controller Goes Here Remove the tes*/
 app.use('/api/gigis', gigisController);
+app.post('/register', register);
+app.post('/login', login);
 /* Controller Ends here */
 //LISTENER
 

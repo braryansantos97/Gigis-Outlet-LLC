@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LogedIn from './LogedIn';
 
 const NavBar = props => {
 	return (
@@ -9,6 +10,7 @@ const NavBar = props => {
 					{key}
 				</Link>
 			))}
+			<LogedIn />
 		</nav>
 	);
 };
