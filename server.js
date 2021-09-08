@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 8000;
 const mongoose = require('mongoose');
 const path = require('path');
 const gigisController = require('./controllers/gigis');
-const { hash, register, login } = require('./controllers/Authentication');
+const { hash, register, login } = require('./controllers/authentication');
 
 const MONGODB_URI = process.env.MONGODB_URI
 const db = mongoose.connection;
