@@ -50,6 +50,16 @@ router.put('/:id', async (req, res) => {
   }
 })
 
+// router.put('/:id/buy', async (req, res) => {
+//   try {
+//     const updateProductQty = await Product.findByIdAndUpdate(req.params.id, { $inc: {"qty": -1 } }, {new: true })
+//     res.locals.data.product = response;
+//   } catch (error) {
+//     console.log(error)
+//     res.status(400).json({ message: error.message })
+//   }
+// })
+
 //DELETE
 
 router.delete('/:id', async (req, res) => {

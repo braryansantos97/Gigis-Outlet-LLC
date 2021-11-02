@@ -68,7 +68,10 @@ export default function App(props) {
 					<h1>Gigis Outlet LLC</h1>
 					{toggle ? (
 						<div>
-							<form className="px-4 py-3" onSubmit={handleLogin}>
+							<form
+								className="px-4 py-3 container text-center"
+								onSubmit={handleLogin}
+							>
 								<div className="form-group">
 									<label htmlFor="username">Username</label>
 									<input
@@ -104,7 +107,7 @@ export default function App(props) {
 						</div>
 					) : (
 						<div>
-							<form className="px-4 py-3" onSubmit={handleRegister}>
+							<form className="px-4 py-3 container" onSubmit={handleRegister}>
 								<div className="form-group">
 									<label htmlFor="fisrtName">Firt Name</label>
 									<input

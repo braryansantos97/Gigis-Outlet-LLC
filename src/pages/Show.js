@@ -23,25 +23,25 @@ export default function Show(props) {
 		})();
 	}, []);
 
-	const checkqty = () => {
-		if (product.qty > 0) {
-			return (
-				<>
-					<a href={`/products/${product._id}/buy`} id="btn">
-						<button className="btn btn-primary">BUY</button>
-					</a>
-					<br />
-				</>
-			);
-		} else {
-			return (
-				<>
-					<h3>Out of stock</h3>
-					<br />
-				</>
-			);
-		}
-	};
+	// const checkqty = () => {
+	// 	if (product.qty > 0) {
+	// 		return (
+	// 			<>
+	// 				<Link to={`/buy`}>
+	// 					<button className="btn btn-primary">BUY</button>
+	// 				</Link>
+	// 				<br />
+	// 			</>
+	// 		);
+	// 	} else {
+	// 		return (
+	// 			<>
+	// 				<h3>Out of stock</h3>
+	// 				<br />
+	// 			</>
+	// 		);
+	// 	}
+	// };
 
 	return (
 		<div className="ShowPage text-center container-fluid">
@@ -56,7 +56,6 @@ export default function Show(props) {
 					<br />
 					{product.qty} in stock
 					<br />
-					{checkqty()}
 					<Link to="/home" className="btn btn-primary myButton">
 						Back
 					</Link>
