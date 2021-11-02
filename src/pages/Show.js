@@ -45,18 +45,27 @@ export default function Show(props) {
 
 	return (
 		<div className="ShowPage text-center container-fluid">
+			<br />
 			<div className="row">
 				<div className="col-md-6 col-sm-12 justify-content-center">
-					<h1>{product.name}</h1>
 					<img src={product.img} className="w-100 h-auto p-3 img-thumbnail" />
 				</div>
 				<div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-					{product.description}
-					<br />${product.price}
-					<br />
-					{product.qty} in stock
-					<br />
-					<Link to="/home" className="btn btn-primary myButton">
+					<div
+						className="card text-center"
+						style={{
+							background: 'transparent',
+							border: 'solid white'
+						}}
+					>
+						<div className="card-body">
+							<h5 className="card-title">{product.name}</h5>
+							<p className="card-text">{product.description}</p>
+							<p>${product.price}</p>
+							<p>{product.qty} in stock</p>
+						</div>
+					</div>
+					<Link to="/home" className="btn btn-primary">
 						Back
 					</Link>
 				</div>
