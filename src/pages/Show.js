@@ -47,7 +47,7 @@ export default function Show(props) {
 		<div className="ShowPage text-center container-fluid">
 			<br />
 			<div className="row">
-				<div className="col-md-6 col-sm-12 justify-content-center">
+				<div className="col-md-6 col-sm-12 mb-3 justify-content-center">
 					<img src={product.img} className="w-100 h-auto p-3 img-thumbnail" />
 				</div>
 				<div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">

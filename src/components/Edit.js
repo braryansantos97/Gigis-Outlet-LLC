@@ -121,16 +121,13 @@ export default function Edit(props) {
 					<label>
 						{' '}
 						<input
-							className="rounded-pill btn btn-primary"
+							className=" btn btn-primary"
 							type="submit"
 							value="Update Product"
 						/>
 					</label>
 					<label>
-						<button
-							className="btn btn-danger rounded-pill"
-							onClick={handleDelete}
-						>
+						<button className="btn btn-danger" onClick={handleDelete}>
 							Delete product
 						</button>
 					</label>

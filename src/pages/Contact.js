@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function Contact(props) {
 	return (
 		<div className="ContactPage text-center">
-			<h1>Gigis Outlet LLC</h1>
+			<h1 className="display-2">Gigis Outlet LLC</h1>
 			<div
 				className="card container"
 				style={{
@@ -14,7 +14,6 @@ export default function Contact(props) {
 			>
 				<div className="card-body">
 					<h5 className="card-title">Contact Us</h5>
-					<p className="card-text">this a family owned small store.</p>
 					<div>
 						<i className="bi bi-envelope"></i>
 						<p>gigisoutletllc@gmail.com</p>

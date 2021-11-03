@@ -7,20 +7,17 @@ export default function Home(props) {
 
 	const element = products.map(singleProduct => {
 		return (
-			<div
-				key={singleProduct._id}
-				className="col-lg-3 col-md-3 col-sm-6 col-xs-6"
-			>
-				<div className="card mb-4 box-shadow">
+			<div key={singleProduct._id} className="col mb-3">
+				<div className="card box-shadow">
 					<Link to={`/${singleProduct._id}`}>
 						<img
 							src={singleProduct.img}
-							className="card-img-top img-fluid"
+							className="card-img-top"
 							alt="Responsive image"
 						/>
 					</Link>
 					<div className="card-body">
-						<p className="card-text">{singleProduct.name}</p>
+						<h5 className="card-title">{singleProduct.name}</h5>
 					</div>
 				</div>
 			</div>
@@ -44,10 +41,10 @@ export default function Home(props) {
 			<br />
 			<Create products={products} setProducts={setProducts} />
 			<br />
-			<h1>Gisi's Outlet LLC</h1>
+			<h1 className="display-2">Gisi's Outlet LLC</h1>
 			<h2>Our Products</h2>
 			<div className="container">
-				<div className="row">{element}</div>
+				<div className="row row-cols-1 row-cols-md-4 g-4">{element}</div>
 			</div>
 		</div>
 	);

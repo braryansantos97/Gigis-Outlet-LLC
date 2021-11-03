@@ -62,10 +62,10 @@ export default function App(props) {
 	}, []);
 
 	return (
-		<div className="AppPage text-center">
+		<div className="AppPage text-center container">
 			{!token ? (
 				<>
-					<h1>Gigis Outlet LLC</h1>
+					<h1 className="display-1">Gigis Outlet LLC</h1>
 					{toggle ? (
 						<div>
 							<form
@@ -177,15 +177,15 @@ export default function App(props) {
 					)}
 				</>
 			) : (
-				<>
-					<h1>Gigis Outlet LLC</h1>
+				<div className="container">
+					<h1 className="display-1">Gigis Outlet LLC</h1>
 					<h3>Hello! {loggedInUser}</h3>
 					<Link to="/home">
 						<button className="rounded-pill btn btn-primary">
 							Our Products
 						</button>
 					</Link>
-				</>
+				</div>
 			)}
 		</div>
 	);

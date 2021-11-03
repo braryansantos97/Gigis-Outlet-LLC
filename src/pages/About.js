@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function About(props) {
 	return (
 		<div className="AboutPage text-center">
-			<h1>Gigis Outlet LLC</h1>
+			<h1 className="display-2">Gigis Outlet LLC</h1>
 			<div
 				className="card container"
 				style={{
