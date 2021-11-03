@@ -15,9 +15,13 @@ export default function LogedIn(props) {
 	return (
 		<>
 			{token ? (
-				<p>Hello! {loggedInUser}</p>
+				<li className="nav-item h5" style={{ color: 'white' }}>
+					Hello! {loggedInUser}
+				</li>
 			) : (
-				<Link to="/">Sign In/Sing up</Link>
+				<li className="nav-item">
+					<Link to="/">Sign In/Sing up</Link>
+				</li>
 			)}
 		</>
 	);

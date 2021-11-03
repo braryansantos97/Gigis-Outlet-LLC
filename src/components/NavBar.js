@@ -5,14 +5,16 @@ import LogedIn from './LogedIn';
 const NavBar = props => {
 	return (
 		<>
-			<nav className="navbar bg-dark">
+			<ul className="nav nav-fill bg-dark">
 				{props.routes.map(({ key, path }) => (
-					<Link key={key} to={path}>
-						{key}
-					</Link>
+					<li className="nav-item" key={key}>
+						<Link to={path} className="nav-link">
+							{key}
+						</Link>
+					</li>
 				))}
 				<LogedIn />
-			</nav>
+			</ul>
 		</>
 	);
 };

@@ -62,10 +62,10 @@ export default function App(props) {
 	}, []);
 
 	return (
-		<div className="AppPage text-center container">
+		<div className="AppPage text-center container-fluid">
 			{!token ? (
 				<>
-					<h1 className="display-1">Gigis Outlet LLC</h1>
+					<h1 className="display-2">Gigis Outlet LLC</h1>
 					{toggle ? (
 						<div>
 							<form
